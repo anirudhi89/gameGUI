@@ -1,19 +1,20 @@
 # idea: have main be a gui where i can select a variety of projects
+#WIP, last updated 6.23
+#Shoutout pythonguides.com, realpython.com
 import tkinter as tk
-from tkinter import *
-from tkinter import ttk
-
 import rps
-from rps import *
 
 window = tk.Tk()
+window.title('Game Library')
+window.geometry('500x450+500+200')
+window.config(bg="#223441")
 
 greeting = tk.Label(
                     text="Game Library",
                     foreground = "white", #text color
                     background = "#34A2FE", #label bg color
-                    width = 10,
-                    height = 7
+                    width = 80,
+                    height = 2
                     )
 greeting.pack()
 
@@ -28,13 +29,8 @@ rp  = tk.Button(
                 )
 
 
-txtbx = tk.Text()
 
-
-
-txtbx.get(1.0)
 
 rp.pack()
-txtbx.pack()
 window.mainloop()
 

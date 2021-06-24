@@ -5,10 +5,9 @@ def playGame():
 
     comp = t[randint(0, 2)]
     player = False
-
+    txt = f"Choose one of the following: {t} " #updated to use f strings; new in python 3
     while player == False:
-        print("choose one of the following:")
-        player = input(t)
+        player = input(txt)
 
         if player == comp:
             print("tie")
